@@ -6,7 +6,7 @@ from django.db import models
 class BlogPost(models.Model):
      title =  models.CharField(max_length = 60) 
      content = models.TextField()
-     published_date = models.DateTimeField(auto_add_now = TRUE)
+     published_date = models.DateTimeField(auto_now  = TRUE)
      author = models.CharField(max_length = 60)
      
      def __str__(self) :

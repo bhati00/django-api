@@ -1,7 +1,6 @@
 from dataclasses import fields
 from rest_framework import serializers
-
-from mysite.api.models import BlogPost
+from .models import BlogPost
 
 class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
